@@ -2,45 +2,45 @@
     "users": [
         {
             "id": "1",
-            "photo": "julio-draw.jpg",
-            "name": "Júlio dos Santos Pelúcio",
-            "role": "FullStack Developer",
-            "info": "Gosta de encher o saco dos seus colegas"
+            "photo": "halsey.png",
+            "name": "Halsey The Coach",
+            "role": "Coach(T-Leader)",
+            "info": "Likes to sing and dance to raise morale"
         },
         {
             "id": "2",
-            "photo": "julio-draw.jpg",
-            "name": "Júlio dos Santos Pelúcio",
-            "role": "FullStack Developer",
-            "info": "Gosta de encher o saco dos seus colegas"
+            "photo": "harden.jpg",
+            "name": "James Harden",
+            "role": "Dunkmaster",
+            "info": "Smash with dunks"
         },
         {
             "id": "3",
-            "photo": "julio-draw.jpg",
-            "name": "Júlio dos Santos Pelúcio",
-            "role": "FullStack Developer",
-            "info": "Gosta de encher o saco dos seus colegas"
+            "photo": "julio.jpg",
+            "name": "Júlio Fox",
+            "role": "Fill",
+            "info": "Sometimes it does something useful"
         },
         {
             "id": "4",
-            "photo": "julio-draw.jpg",
-            "name": "Júlio dos Santos Pelúcio",
-            "role": "FullStack Developer",
-            "info": "Gosta de encher o saco dos seus colegas"
+            "photo": "kise.jpg",
+            "name": "Ryota Kise",
+            "role": "Handyman",
+            "info": "Copies adversaries and allies skills"
         },
         {
             "id": "5",
-            "photo": "julio-draw.jpg",
-            "name": "Júlio dos Santos Pelúcio",
-            "role": "FullStack Developer",
-            "info": "Gosta de encher o saco dos seus colegas"
+            "photo": "naruto.jpg",
+            "name": "Naruto Uzumaki",
+            "role": "Team Savior (Hokage)",
+            "info": "When we're losing, he turns the game, with a throwing ball(rasengan)"
         },
         {
             "id": "6",
-            "photo": "julio-draw.jpg",
-            "name": "Júlio dos Santos Pelúcio",
-            "role": "FullStack Developer",
-            "info": "Gosta de encher o saco dos seus colegas"
+            "photo": "yuji.jpg",
+            "name": "Yuji Itadori",
+            "role": "Beater",
+            "info": "Beat is his motto"
         }
     ]
 }

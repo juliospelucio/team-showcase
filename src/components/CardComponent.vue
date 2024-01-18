@@ -15,10 +15,10 @@ const imagePath = computed(() => new URL('/src/assets/images/' + props.photo, im
 
 <template>
   <div
-    class="max-w-sm min-w-72 bg-white shadow-lg rounded-md overflow-hidden border border-orange-600"
+    class="max-w-72 min-w-72 bg-white shadow-lg rounded-md overflow-hidden border border-orange-600"
   >
     <div class="w-full bg-orange-500">
-      <img class="w-full h-48 object-cover px-[0.10rem]" :src="imagePath" alt="Profile Picture" />
+      <img class="w-full h-52 object-cover px-[0.10rem]" :src="imagePath" alt="Profile Picture" />
     </div>
     <div class="p-4">
       <h2 class="text-xl font-semibold text-gray-800">{{ props.name }}</h2>
