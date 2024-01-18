@@ -1,0 +1,46 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "photo": "julio-draw.jpg",
+            "name": "Júlio dos Santos Pelúcio",
+            "role": "FullStack Developer",
+            "info": "Gosta de encher o saco dos seus colegas"
+        },
+        {
+            "id": "2",
+            "photo": "julio-draw.jpg",
+            "name": "Júlio dos Santos Pelúcio",
+            "role": "FullStack Developer",
+            "info": "Gosta de encher o saco dos seus colegas"
+        },
+        {
+            "id": "3",
+            "photo": "julio-draw.jpg",
+            "name": "Júlio dos Santos Pelúcio",
+            "role": "FullStack Developer",
+            "info": "Gosta de encher o saco dos seus colegas"
+        },
+        {
+            "id": "4",
+            "photo": "julio-draw.jpg",
+            "name": "Júlio dos Santos Pelúcio",
+            "role": "FullStack Developer",
+            "info": "Gosta de encher o saco dos seus colegas"
+        },
+        {
+            "id": "5",
+            "photo": "julio-draw.jpg",
+            "name": "Júlio dos Santos Pelúcio",
+            "role": "FullStack Developer",
+            "info": "Gosta de encher o saco dos seus colegas"
+        },
+        {
+            "id": "6",
+            "photo": "julio-draw.jpg",
+            "name": "Júlio dos Santos Pelúcio",
+            "role": "FullStack Developer",
+            "info": "Gosta de encher o saco dos seus colegas"
+        }
+    ]
+}
