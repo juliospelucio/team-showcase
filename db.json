@@ -5,42 +5,130 @@
             "photo": "halsey.png",
             "name": "Halsey The Coach",
             "role": "Coach(T-Leader)",
-            "info": "Likes to sing and dance to raise morale"
+            "info": "Likes to sing and dance to raise morale",
+            "start-date": "1996-05-13",
+            "end-date": "",
+            "facebook": "#",
+            "instagram": "#",
+            "linkedin": "#",
+            "likes": [
+                "sing",
+                "act",
+                "dance",
+                "play guitar"
+            ],
+            "dislikes": [
+                "haters",
+                "I mean, nothing(she's perfect)"
+            ]
         },
         {
             "id": "2",
             "photo": "harden.jpg",
             "name": "James Harden",
             "role": "Dunkmaster",
-            "info": "Smash with dunks"
+            "info": "Smash with dunks",
+            "start-date": "1989-08-26",
+            "end-date": "2023-10-10",
+            "facebook": "#",
+            "instagram": "#",
+            "linkedin": "#",
+            "likes": [
+                "dunk",
+                "diss",
+                "beard"
+            ],
+            "dislikes": [
+                "?"
+            ]
         },
         {
             "id": "3",
             "photo": "julio.jpg",
             "name": "Júlio Fox",
             "role": "Fill",
-            "info": "Sometimes it does something useful"
+            "info": "Sometimes it does something useful",
+            "start-date": "1989-08-26",
+            "end-date": "2023-10-10",
+            "facebook": "#",
+            "instagram": "#",
+            "linkedin": "#",
+            "likes": [
+                "basketball",
+                "fab",
+                "Former dog sakura",
+                "sweets",
+                "short ...",
+                "ponytail?",
+                "friends"
+            ],
+            "dislikes": [
+                "fab (duh)"
+            ]
         },
         {
             "id": "4",
             "photo": "kise.jpg",
             "name": "Ryota Kise",
             "role": "Handyman",
-            "info": "Copies adversaries and allies skills"
+            "info": "Copies adversaries and allies skills",
+            "start-date": "1989-08-26",
+            "end-date": "2023-10-10",
+            "facebook": "#",
+            "instagram": "#",
+            "linkedin": "#",
+            "likes": [
+                "be good",
+                "be cool",
+                "copy"
+            ],
+            "dislikes": [
+                "be weak",
+                "unfashion people"
+            ]
         },
         {
             "id": "5",
             "photo": "naruto.jpg",
             "name": "Naruto Uzumaki",
             "role": "Team Savior (Hokage)",
-            "info": "When we're losing, he turns the game, with a throwing ball(rasengan)"
+            "info": "When we're losing, he turns the game, with a throwing ball(rasengan)",
+            "start-date": "1989-08-26",
+            "end-date": "2023-10-10",
+            "facebook": "#",
+            "instagram": "#",
+            "linkedin": "#",
+            "likes": [
+                "hinata",
+                "sasuke",
+                "hokage",
+                "rasengan",
+                "scream",
+                "lamen"
+            ],
+            "dislikes": [
+                "sasuke?"
+            ]
         },
         {
             "id": "6",
             "photo": "yuji.jpg",
             "name": "Yuji Itadori",
             "role": "Beater",
-            "info": "Beat is his motto"
+            "info": "Beat is his motto",
+            "start-date": "1989-08-26",
+            "end-date": "2023-10-10",
+            "facebook": "#",
+            "instagram": "#",
+            "linkedin": "#",
+            "likes": [
+                "be strong",
+                "big ass",
+                "punch a lot"
+            ],
+            "dislikes": [
+                "sukuna"
+            ]
         }
     ]
 }

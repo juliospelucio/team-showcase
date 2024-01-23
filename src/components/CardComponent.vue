@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 
 export interface Props {
+  id: string
   photo: string
   name: string
   role: string
@@ -23,11 +24,16 @@ const imagePath = computed(() => new URL('/src/assets/images/' + props.photo, im
       <p class="text-gray-600">{{ props.role }}</p>
       <p class="text-gray-700 mt-2 truncate cursor-help" :title="props.info">{{ props.info }}</p>
       <div class="flex justify-between items-center mt-4">
-        <a href="#" class="text-blue-500 hover:underline">View Profile</a>
+        <RouterLink :to="{ name: 'profile', params: { id: props.id } }">
+          <a href="#" class="text-blue-500 hover:underline">View Profile</a>
+        </RouterLink>
         <div class="flex items-center">
-          <img class="w-8 h-8 rounded-full mr-2 border border-orange-600" src="@/assets/images/team-logo.png"
-            alt="Avatar">
-          <span class="text-gray-700">Foxtsune</span>
+          <img
+            class="w-8 h-8 rounded-full mr-2 border border-orange-600"
+            src="@/assets/images/team-logo.png"
+            alt="Avatar"
+          />
+          <span class="text-gray-700">Fox</span>
         </div>
       </div>
     </div>
