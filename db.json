@@ -6,8 +6,16 @@
             "name": "Halsey The Coach",
             "role": "Coach(T-Leader)",
             "info": "Likes to sing and dance to raise morale",
-            "start-date": "1996-05-13",
-            "end-date": "",
+            "relevant_dates": [
+                {
+                    "description": "Starting date",
+                    "date": "1996-05-13"
+                },
+                {
+                    "description": "Ending date",
+                    "date": "2023-10-10"
+                }
+            ],
             "facebook": "#",
             "instagram": "#",
             "linkedin": "#",
@@ -28,8 +36,16 @@
             "name": "James Harden",
             "role": "Dunkmaster",
             "info": "Smash with dunks",
-            "start-date": "1989-08-26",
-            "end-date": "2023-10-10",
+            "relevant_dates": [
+                {
+                    "description": "Starting date",
+                    "date": "1989-08-26"
+                },
+                {
+                    "description": "Ending date",
+                    "date": "2023-10-10"
+                }
+            ],
             "facebook": "#",
             "instagram": "#",
             "linkedin": "#",
@@ -48,8 +64,16 @@
             "name": "Júlio Fox",
             "role": "Fill",
             "info": "Sometimes it does something useful",
-            "start-date": "1989-08-26",
-            "end-date": "2023-10-10",
+            "relevant_dates": [
+                {
+                    "description": "Starting date",
+                    "date": "1989-08-26"
+                },
+                {
+                    "description": "Ending date",
+                    "date": "2023-10-10"
+                }
+            ],
             "facebook": "#",
             "instagram": "#",
             "linkedin": "#",
@@ -72,8 +96,16 @@
             "name": "Ryota Kise",
             "role": "Handyman",
             "info": "Copies adversaries and allies skills",
-            "start-date": "1989-08-26",
-            "end-date": "2023-10-10",
+            "relevant_dates": [
+                {
+                    "description": "Starting date",
+                    "date": "1989-08-26"
+                },
+                {
+                    "description": "Ending date",
+                    "date": "2023-10-10"
+                }
+            ],
             "facebook": "#",
             "instagram": "#",
             "linkedin": "#",
@@ -93,8 +125,16 @@
             "name": "Naruto Uzumaki",
             "role": "Team Savior (Hokage)",
             "info": "When we're losing, he turns the game, with a throwing ball(rasengan)",
-            "start-date": "1989-08-26",
-            "end-date": "2023-10-10",
+            "relevant_dates": [
+                {
+                    "description": "Starting date",
+                    "date": "1989-08-26"
+                },
+                {
+                    "description": "Ending date",
+                    "date": "2023-10-10"
+                }
+            ],
             "facebook": "#",
             "instagram": "#",
             "linkedin": "#",
@@ -116,8 +156,16 @@
             "name": "Yuji Itadori",
             "role": "Beater",
             "info": "Beat is his motto",
-            "start-date": "1989-08-26",
-            "end-date": "2023-10-10",
+            "relevant_dates": [
+                {
+                    "description": "Starting date",
+                    "date": "1989-08-26"
+                },
+                {
+                    "description": "Ending date",
+                    "date": "2023-10-10"
+                }
+            ],
             "facebook": "#",
             "instagram": "#",
             "linkedin": "#",

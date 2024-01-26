@@ -19,6 +19,12 @@ interface User {
   linkedin: string
   likes: string[]
   dislikes: string[]
+  relevant_dates: SignificanteDates[]
+}
+
+interface SignificanteDates {
+  description: string
+  date: string
 }
 
 const user = ref<User>()
@@ -44,46 +50,72 @@ onMounted(async () => {
     <h2 class="text-center text-2xl font-semibold mt-3">{{ user?.name }}</h2>
     <p class="text-center text-gray-600 mt-1">{{ user?.role }}</p>
     <div class="flex justify-center mt-5">
-      <!-- TODO social media links -->
-
-      <a href="#" class="text-orange-500 hover:text-orange-700 mx-3">
-        <div class="flex"><FacebookIcon /> <span class="ml-2">Facebook</span></div>
-      </a>
-      <a href="#" class="text-orange-500 hover:text-orange-700 mx-3">
-        <div class="flex"><InstagramIcon /> <span class="ml-2">Instagram</span></div>
-      </a>
-      <a href="#" class="text-orange-500 hover:text-orange-700 mx-3">
-        <div class="flex"><LinkedinIcon /> <span class="ml-2">LinkedIn</span></div>
-      </a>
-      <!-- <a href="#" class="text-orange-500 hover:text-orange-700 mx-3">
+      <a :href="user?.facebook" class="text-orange-500 hover:text-orange-700 mx-3">
         <div class="flex">
-          <GithubIcon /> <span class="ml-2">GitHub</span>
+          <FacebookIcon class="w-6 rounded-md bg-white" /> <span class="ml-2">Facebook</span>
         </div>
-      </a> -->
+      </a>
+      <a :href="user?.instagram" class="text-orange-500 hover:text-orange-700 mx-3">
+        <div class="flex">
+          <InstagramIcon class="w-6 rounded-md bg-white" /> <span class="ml-2">Instagram</span>
+        </div>
+      </a>
+      <a :href="user?.linkedin" class="text-orange-500 hover:text-orange-700 mx-3">
+        <div class="flex">
+          <LinkedinIcon class="w-6 rounded-md bg-white" /> <span class="ml-2">LinkedIn</span>
+        </div>
+      </a>
     </div>
+
+    <hr class="border border-orange-600 mt-5" />
+
+    <div class="flex flex-row">
+      <div class="mt-5 w-1/2 flex flex-col items-center">
+        <h3 class="text-xl font-semibold">Likes a lot</h3>
+        <ul>
+          <li class="text-gray-600 mt-2" v-for="(like, key) in user?.likes" :key="key">
+            <div class="flex">
+              <CheckIcon class="h-4 w-4 text-orange-500 dark:text-orange-400" />
+              <span class="ml-2">{{ like }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-5 w-1/2 flex flex-col items-center">
+        <h3 class="text-xl font-semibold">Dislike</h3>
+        <ul>
+          <li class="text-gray-600 mt-2" v-for="(dislike, key) in user?.dislikes" :key="key">
+            <div class="flex">
+              <XIcon class="h-4 w-4 text-orange-500 dark:text-orange-400" />
+              <span class="ml-2">{{ dislike }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border border-orange-600 mt-5" />
     <!-- TODO Add start date and end date -->
 
-    <div class="mt-5">
-      <h3 class="text-xl font-semibold">Likes a lot</h3>
-      <ul>
-        <li class="text-gray-600 mt-2" v-for="(like, key) in user?.likes" :key="key">
-          <div class="flex">
-            <CheckIcon class="h-4 w-4 text-orange-500 dark:text-orange-400" />
-            <span class="ml-2">{{ like }}</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="mt-5">
-      <h3 class="text-xl font-semibold">Dislike</h3>
-      <ul>
-        <li class="text-gray-600 mt-2" v-for="(dislike, key) in user?.dislikes" :key="key">
-          <div class="flex">
-            <XIcon class="h-4 w-4 text-orange-500 dark:text-orange-400" />
-            <span class="ml-2">{{ dislike }}</span>
-          </div>
-        </li>
-      </ul>
+    <div
+      class="mt-10 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent"
+    >
+      <div
+        v-for="date in user?.relevant_dates"
+        class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+      >
+        <div
+          class="flex justify-center items-center w-24 h-24 text-white font-medium bg-orange-500 rounded-full border border-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+        >
+          {{ date.date }}
+        </div>
+
+        <div
+          class="text-center w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-orange-200 shadow"
+        >
+          {{ date.description }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
