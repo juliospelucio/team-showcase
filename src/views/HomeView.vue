@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CardComponent from '@/components/CardComponent.vue'
 import api from '@/services/api'
-import { ref, onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 interface User {
   id: string

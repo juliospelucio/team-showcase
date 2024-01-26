@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import CheckIcon from '@/components/icons/CheckIcon.vue'
 import FacebookIcon from '@/components/icons/FacebookIcon.vue'
 import InstagramIcon from '@/components/icons/InstagramIcon.vue'
 import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
-import GithubIcon from '@/components/icons/GithubIcon.vue'
+import XIcon from '@/components/icons/XIcon.vue'
 import api from '@/services/api'
 import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
@@ -13,6 +14,11 @@ interface User {
   name: string
   role: string
   info: string
+  facebook: string
+  instagram: string
+  linkedin: string
+  likes: string[]
+  dislikes: string[]
 }
 
 const user = ref<User>()
@@ -56,13 +62,28 @@ onMounted(async () => {
       </a> -->
     </div>
     <!-- TODO Add start date and end date -->
+
     <div class="mt-5">
       <h3 class="text-xl font-semibold">Likes a lot</h3>
-      <p class="text-gray-600 mt-2">teste</p>
+      <ul>
+        <li class="text-gray-600 mt-2" v-for="(like, key) in user?.likes" :key="key">
+          <div class="flex">
+            <CheckIcon class="h-4 w-4 text-orange-500 dark:text-orange-400" />
+            <span class="ml-2">{{ like }}</span>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="mt-5">
       <h3 class="text-xl font-semibold">Dislike</h3>
-      <p class="text-gray-600 mt-2">teste</p>
+      <ul>
+        <li class="text-gray-600 mt-2" v-for="(dislike, key) in user?.dislikes" :key="key">
+          <div class="flex">
+            <XIcon class="h-4 w-4 text-orange-500 dark:text-orange-400" />
+            <span class="ml-2">{{ dislike }}</span>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
