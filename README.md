@@ -32,3 +32,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Json Server [Json-Server](https://www.npmjs.com/package/json-server)
+
+```sh
+npx json-server db.json
+```
